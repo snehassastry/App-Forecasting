@@ -1,8 +1,8 @@
 streamlit
 cython
 pandas
-numpy
+numpy==1.21.6
 matplotlib
 statsmodels
 scikit-learn
-pmdarima
+pmdarima==1.8.5
