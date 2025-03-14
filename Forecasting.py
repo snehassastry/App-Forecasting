@@ -1,3 +1,16 @@
+import os
+import streamlit as st
+
+if st.button("Run Setup Commands"):
+    st.write("Updating pip...")
+    os.system("pip install --upgrade pip")
+
+    st.write("Installing missing dependencies...")
+    os.system("pip install setuptools")
+    os.system("pip install -r requirements.txt")
+
+    st.success("Setup commands executed! Try restarting the app.")
+
 import streamlit as st
 import pandas as pd
 import numpy as np
